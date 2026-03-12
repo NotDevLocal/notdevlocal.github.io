@@ -167,8 +167,10 @@
     }
 
     .why-grid > .card:hover,
-    .workflow-card:hover,
-    .rate-card:hover,
+    .workflow-card.surface:hover,
+    .rate-card.surface:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
     .text-card:hover,
     .testimonial:hover,
     .cta-panel:hover {
@@ -609,7 +611,7 @@
       position: relative;
       aspect-ratio: 1;
       width: 72px;
-      margin-top: -6px;
+      margin-top: -12px;
       border-radius: 20px;
       overflow: hidden;
       border: 1px solid var(--line);
