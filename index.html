@@ -177,6 +177,15 @@
       box-shadow: var(--shadow-soft);
     }
 
+    .workflow-card:hover,
+    .workflow-card:focus-within,
+    .rate-card:hover,
+    .rate-card:focus-within {
+      transform: translateY(-6px) scale(1.02);
+      border-color: var(--line-strong);
+      box-shadow: var(--shadow-soft);
+    }
+
     .reveal {
       opacity: 0;
       transform: translateY(28px);
@@ -600,6 +609,7 @@
       position: relative;
       aspect-ratio: 1;
       width: 72px;
+      margin-top: -6px;
       border-radius: 20px;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -1460,6 +1470,10 @@
         grid-template-columns: 1fr;
       }
 
+      .profile-frame {
+        margin-top: 2px;
+      }
+
       .work-grid,
       .rates-primary,
       .rates-secondary {
@@ -1910,11 +1924,11 @@
           <div class="payment-method-row">
             <div class="payment-method-card">
               <span class="card-number">01</span>
-              <span>Robux</span>
+              <span>Robux ($1 USD = 150 Robux)</span>
             </div>
             <div class="payment-method-card">
               <span class="card-number">02</span>
-              <span>PayPal</span>
+              <span>PayPal (G&amp;S or F&amp;F)</span>
             </div>
             <div class="payment-method-card">
               <span class="card-number">03</span>
@@ -1922,7 +1936,6 @@
             </div>
           </div>
           <ul class="payment-notes">
-            <li>Robux Conversion Rate: $1 USD = 150 Robux</li>
             <li>For PayPal transactions, Goods &amp; Services is preferred, Friends &amp; Family is still accepted</li>
             <li>Roblox Gift Cards require more verification before being accepted as payment</li>
           </ul>
